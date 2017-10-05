@@ -11,39 +11,50 @@
     <link rel="shortcut icon" href="assets/img/Calculator.ico" type="img/x-icon">
 </head>
 <body>
-    
+    <h1> CALCULATOR</h1>
     <form  class="flex">
     <div class="flex-content">
+            <!-- <div data-wow-iteration="3" data-wow-duration="0.35s" class="span3 wow pulse"> -->
+            <div class="span3 wow swing" id="num"><img src="assets/img/icon.png" height="200"></div>
         <div class="head gold"></div>
         <div class="content gray-soft">
             <div class="screen-case">
                 <input type="text" class="screen gray-medium" readonly><br>
             </div>
             <hr>
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="*"><br>
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-"><br>
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="+"><br>
+            <input type="button" value="1" id="btn">
+            <input type="button" value="2" id="btn">
+            <input type="button" value="3" id="btn">
+            <input type="button" value="*" id="btn"><br>
+            <input type="button" value="4" id="btn">
+            <input type="button" value="5" id="btn">
+            <input type="button" value="6" id="btn">
+            <input type="button" value="-" id="btn"><br>
+            <input type="button" value="7" id="btn">
+            <input type="button" value="8" id="btn">
+            <input type="button" value="9" id="btn">
+            <input type="button" value="+" id="btn"><br>
             <input class="gray-green" type="button" value="C" >
             <button class="gray-green">=</button>
             <input class="number gray-green" type="button" value="0">
             <input class="number gray-green" type="button" value="/">
         </div>
     </div>
-    <!-- </div> -->
-    </form>    
-    
-
-
+    <div class=" wow zoomInLeft " id="num2"><img src="assets/img/dos.png" height="200"></div>
+    <br>
+    <div class=" wow bounceInDown " id="num3"><img src="assets/img/tres.png" height="200"></div>
+    <div data-wow-iteration="5" data-wow-duration="0.35s" class="span3 wow pulse">
+    <div class=" wow bounceInLeft " id="num5"><img src="assets/img/cinco.png" height="200"></div>
+    </form>   
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="assets/js/lib/noframework.waypoints.min.js"></script> -->
     <script src="assets/js/app.js" ></script>
+    <script src = "assets/js/wow.min.js"> </script>
+    <script>
+        new WOW().init();
+      </script>
+    <script src="assets/js/app.js" ></script>
+    
 </body>
 </html>
